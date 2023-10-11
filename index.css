@@ -1,0 +1,109 @@
+h1{
+    text-align:right ;
+}
+button{
+    width: 10em;
+}
+body{
+
+    background-image: url(./assets/bg-intro-desktop.png);
+    background-color: rgb(249, 136, 230);
+    background-position:center;
+    align-items: center;
+    justify-content: justify;
+    display: flex;
+      font-family: 'Poppins', sans-serif;   
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('./Poppins-Medium.ttf');/
+    format('woff2')
+}
+.container{
+    margin-top: 8em;
+    margin-left: 7em;
+    box-sizing: border-box;
+display: flex;
+flex-direction:center;
+float: center;
+justify-content: center;
+}
+.display{
+    margin-left: 0;
+    background-color: white;
+    width:19em;
+    height: 16em;
+    align-items: center;
+        padding: 1.2em; 
+        border-radius: 5px;
+        margin-top: 0;
+      display: inline-block;
+      margin-right: 2em;
+    }
+    
+    .p1{
+        color: white;
+        display: flex;
+        flex-direction:column;
+        align-items: left; 
+        margin-top: 3em; 
+        font-size: 10px; 
+         
+    }
+    .trial1{
+        border-color: hsl(187, 90%, 49%);
+        text-align: center;
+       border-radius: 0.350em;
+        background-color: hsl(180, 89%, 71%);
+        color: white;
+        padding: 0.300em;
+       max-width: max-content;
+        display:inline-flex;
+        flex-direction: row;
+        float: center;
+        margin-bottom: 1em;
+    }
+    .free-trial{
+        font-weight: 500;
+    }
+    
+    #form{
+        margin-top: 0.575em;
+        margin-bottom: 0.575em;
+        border-radius: 0.350em;
+        padding: 0.375em;
+        width: 20em;
+    border-color: azure;
+    border-style: groove;
+    align-items: center; 
+    }
+
+        
+    
+      @media (max-width: 600px){
+        .container{flex-direction: column;
+            align-items: top;
+            padding: 0;
+            background-size: contain;
+            margin:0;
+        }
+        .body{
+            
+            display: inline;
+        }
+        }
+        @media (orientation: portrait) (max-width: 500px){
+            .p1{
+                display: block;
+                top: 0;
+                margin-left: 5px;
+                align-items: left; 
+                margin-top: 0; 
+                height: 20px;
+            }
+            .trial1{
+                padding: 0.250em;
+                display: block;
+            }
+        }
+        
